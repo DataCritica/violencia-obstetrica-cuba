@@ -46,4 +46,4 @@ df_join.loc[:, 'Total'] = df_join.sum(axis=1)
 df_join
 
 # Save dataframe as 'xlsx'
-df_join.to_excel(f'data/data_hospital.xlsx', index = False)
+df_join.to_excel(f'data/data_hospital_copy.xlsx', index = False)
