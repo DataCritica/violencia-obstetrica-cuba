@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_435965817f9d4fc5a51bf5f8c63aa234 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    
+            <style> #vega_lite_6ede957835504007b003b59b029763fd {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    <script src="https://cdn.jsdelivr.net/npm/vega@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3"></script>
+    
+            <style> #vega_lite_d2947d5800d2439f88b34e4463e4ad20 {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_664f72f6dfc74840a08a967b7f299423 {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_ebb2c8233c024220b1924e65dbd14eff {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_3ea930a7f4b34a08b1a4af41c741a6c8 {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_e8169450c908480999cbed5006bd7d18 {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_96760fa9870448f3ab1452488e22f928 {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_edae06b8e4374b5581ddc1e12a1aa29d {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_2bc52558425a4d83ac672cfdf3843ead {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_a4b94fa8557048c2b66c8e4a50b10659 {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_f703052ebfac4ce68f01ce28490694dd {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_d86794e8e59242b6b7e18fbb89e26ccc {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_0b02441b262148a3a162013ed2c97754 {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_943e262f6de04606b7d4a2bb7bb27c4e {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_a8f4133a905d4ef092321dc34115ec5a {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_98f58a71dd36416d950f09948e2b0897 {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_8feb2ea5a414480294126f73d084d2b0 {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_3f60b325497e4d3fbb84e026a56d6de4 {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_bb63b5f7e58949709869c90634b45031 {
+                position : relative;
+                width : 450.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+</head>
+<body>    
+    
+             <h3 align="center" style="font-size:16px"><b>Hospitales con denuncias de maltrato en Cuba</b></h3>
+             
+    
+            <div class="folium-map" id="map_435965817f9d4fc5a51bf5f8c63aa234" ></div>
+        
+</body>
+<script>    
+    
+            var map_435965817f9d4fc5a51bf5f8c63aa234 = L.map(
+                "map_435965817f9d4fc5a51bf5f8c63aa234",
+                {
+                    center: [22.037635528256533, -79.36879425670136],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9f17d74cdfae43999dccf03a538a6880 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_435965817f9d4fc5a51bf5f8c63aa234);
+        
+    
+            var tile_layer_5f7c32ebf3c246d2838a56633c55733e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_435965817f9d4fc5a51bf5f8c63aa234);
+        
+    
+            var feature_group_658fdaff4ad44cbfb908e29ee4c73352 = L.featureGroup(
+                {}
+            ).addTo(map_435965817f9d4fc5a51bf5f8c63aa234);
+        
+    
+            var circle_marker_20b554cf4e6a47aea0db620b9215e2c0 = L.circleMarker(
+                [22.492379052036, -79.552781774193],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6666666666666666, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_eed8cc111027496da577d2b29413e172 = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_6ede957835504007b003b59b029763fd = $(`             <div id="vega_lite_6ede957835504007b003b59b029763fd"></div>             `)[0];
+            popup_eed8cc111027496da577d2b29413e172.setContent(vega_lite_6ede957835504007b003b59b029763fd);
+        
+
+        circle_marker_20b554cf4e6a47aea0db620b9215e2c0.bindPopup(popup_eed8cc111027496da577d2b29413e172)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_6ede957835504007b003b59b029763fd, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital0", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital0", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector736": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_20b554cf4e6a47aea0db620b9215e2c0.bindTooltip(
+                `<div>
+                     Hospital General Docente 26 de Diciembre de Remedios
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a913cd91e0cd4cdda1128be54f368c23 = L.circleMarker(
+                [20.1577360164937, -75.2176299745131],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.6666666666666667, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_803b22150d144927927c97dc10ac2478 = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_d2947d5800d2439f88b34e4463e4ad20 = $(`             <div id="vega_lite_d2947d5800d2439f88b34e4463e4ad20"></div>             `)[0];
+            popup_803b22150d144927927c97dc10ac2478.setContent(vega_lite_d2947d5800d2439f88b34e4463e4ad20);
+        
+
+        circle_marker_a913cd91e0cd4cdda1128be54f368c23.bindPopup(popup_803b22150d144927927c97dc10ac2478)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_d2947d5800d2439f88b34e4463e4ad20, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital1", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital1", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector737": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_a913cd91e0cd4cdda1128be54f368c23.bindTooltip(
+                `<div>
+                     Hospital General Docente Dr Agostinho Neto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7be3aa2c6e20417abe4d16c936d85ce8 = L.circleMarker(
+                [20.8882183791154, -76.269230287719],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.6666666666666665, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_1b526e4b2b3b47acb4a20e9fc5d98a49 = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_664f72f6dfc74840a08a967b7f299423 = $(`             <div id="vega_lite_664f72f6dfc74840a08a967b7f299423"></div>             `)[0];
+            popup_1b526e4b2b3b47acb4a20e9fc5d98a49.setContent(vega_lite_664f72f6dfc74840a08a967b7f299423);
+        
+
+        circle_marker_7be3aa2c6e20417abe4d16c936d85ce8.bindPopup(popup_1b526e4b2b3b47acb4a20e9fc5d98a49)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_664f72f6dfc74840a08a967b7f299423, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital2", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital2", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector738": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_7be3aa2c6e20417abe4d16c936d85ce8.bindTooltip(
+                `<div>
+                     Hospital General Docente Vladimir Ilich Lenin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_52118041fbc948e18df0033d7ee84c00 = L.circleMarker(
+                [23.1309224772831, -82.3978012741791],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 43.666666666666664, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_5249f87e0615429f895b06de63080683 = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_ebb2c8233c024220b1924e65dbd14eff = $(`             <div id="vega_lite_ebb2c8233c024220b1924e65dbd14eff"></div>             `)[0];
+            popup_5249f87e0615429f895b06de63080683.setContent(vega_lite_ebb2c8233c024220b1924e65dbd14eff);
+        
+
+        circle_marker_52118041fbc948e18df0033d7ee84c00.bindPopup(popup_5249f87e0615429f895b06de63080683)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_ebb2c8233c024220b1924e65dbd14eff, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital3", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital3", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector739": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_52118041fbc948e18df0033d7ee84c00.bindTooltip(
+                `<div>
+                     Hospital Ginecobstétrico Ramón González Coro
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1303b2dd820e4c6895e0ad9157e54e5d = L.circleMarker(
+                [22.4404238794307, -83.6711562030296],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_eb856dc35a834408a89f8a532905da11 = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_3ea930a7f4b34a08b1a4af41c741a6c8 = $(`             <div id="vega_lite_3ea930a7f4b34a08b1a4af41c741a6c8"></div>             `)[0];
+            popup_eb856dc35a834408a89f8a532905da11.setContent(vega_lite_3ea930a7f4b34a08b1a4af41c741a6c8);
+        
+
+        circle_marker_1303b2dd820e4c6895e0ad9157e54e5d.bindPopup(popup_eb856dc35a834408a89f8a532905da11)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_3ea930a7f4b34a08b1a4af41c741a6c8, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital4", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital4", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector740": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_1303b2dd820e4c6895e0ad9157e54e5d.bindTooltip(
+                `<div>
+                     Hospital Universitario Abel Santamaría Cuadrado
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5fa87d585c4b48c592875c5b0c9f6099 = L.circleMarker(
+                [22.3908620444187, -79.9541586588524],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_432cc786ac374b0db299d2f26cc19340 = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_e8169450c908480999cbed5006bd7d18 = $(`             <div id="vega_lite_e8169450c908480999cbed5006bd7d18"></div>             `)[0];
+            popup_432cc786ac374b0db299d2f26cc19340.setContent(vega_lite_e8169450c908480999cbed5006bd7d18);
+        
+
+        circle_marker_5fa87d585c4b48c592875c5b0c9f6099.bindPopup(popup_432cc786ac374b0db299d2f26cc19340)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_e8169450c908480999cbed5006bd7d18, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital5", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital5", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector741": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_5fa87d585c4b48c592875c5b0c9f6099.bindTooltip(
+                `<div>
+                     Hospital Universitario Ginecobstétrico Mariana Grajales
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_54e296b15d9943039dc4b7b16c9e74bb = L.circleMarker(
+                [21.4043162072618, -77.8878039030512],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_15054acdf9344cffbcb4b16f21cf3e61 = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_96760fa9870448f3ab1452488e22f928 = $(`             <div id="vega_lite_96760fa9870448f3ab1452488e22f928"></div>             `)[0];
+            popup_15054acdf9344cffbcb4b16f21cf3e61.setContent(vega_lite_96760fa9870448f3ab1452488e22f928);
+        
+
+        circle_marker_54e296b15d9943039dc4b7b16c9e74bb.bindPopup(popup_15054acdf9344cffbcb4b16f21cf3e61)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_96760fa9870448f3ab1452488e22f928, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital6", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital6", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector742": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_54e296b15d9943039dc4b7b16c9e74bb.bindTooltip(
+                `<div>
+                     Hospital Clínico Quirúrgico Amalia Simoni 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e85949d781e54fb5acbc08405a66cc68 = L.circleMarker(
+                [20.0346264574946, -75.7988162469838],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_5e2f9679adbb4645840fb24ff5178493 = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_edae06b8e4374b5581ddc1e12a1aa29d = $(`             <div id="vega_lite_edae06b8e4374b5581ddc1e12a1aa29d"></div>             `)[0];
+            popup_5e2f9679adbb4645840fb24ff5178493.setContent(vega_lite_edae06b8e4374b5581ddc1e12a1aa29d);
+        
+
+        circle_marker_e85949d781e54fb5acbc08405a66cc68.bindPopup(popup_5e2f9679adbb4645840fb24ff5178493)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_edae06b8e4374b5581ddc1e12a1aa29d, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital7", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital7", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector743": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_e85949d781e54fb5acbc08405a66cc68.bindTooltip(
+                `<div>
+                     Hospital Clínico Quirúrgico Juan Bruno Zayas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9ecae63117a149aaad02fabbd2fcbece = L.circleMarker(
+                [23.1293266136261, -82.3042629318505],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_2c911bb6c1e943dc8f3a5b56ae7346f8 = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_2bc52558425a4d83ac672cfdf3843ead = $(`             <div id="vega_lite_2bc52558425a4d83ac672cfdf3843ead"></div>             `)[0];
+            popup_2c911bb6c1e943dc8f3a5b56ae7346f8.setContent(vega_lite_2bc52558425a4d83ac672cfdf3843ead);
+        
+
+        circle_marker_9ecae63117a149aaad02fabbd2fcbece.bindPopup(popup_2c911bb6c1e943dc8f3a5b56ae7346f8)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_2bc52558425a4d83ac672cfdf3843ead, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital8", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital8", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector744": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_9ecae63117a149aaad02fabbd2fcbece.bindTooltip(
+                `<div>
+                     Hospital Docente Ginecobstétrico de Guanabacoa (La Fátima)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e114dccf8aba49908d51812d3041b03c = L.circleMarker(
+                [23.0602615734335, -82.3918085165094],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.666666666666668, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_9c6276dea33d4801b880749fcfd4cb6b = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_a4b94fa8557048c2b66c8e4a50b10659 = $(`             <div id="vega_lite_a4b94fa8557048c2b66c8e4a50b10659"></div>             `)[0];
+            popup_9c6276dea33d4801b880749fcfd4cb6b.setContent(vega_lite_a4b94fa8557048c2b66c8e4a50b10659);
+        
+
+        circle_marker_e114dccf8aba49908d51812d3041b03c.bindPopup(popup_9c6276dea33d4801b880749fcfd4cb6b)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_a4b94fa8557048c2b66c8e4a50b10659, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital9", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital9", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector745": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_e114dccf8aba49908d51812d3041b03c.bindTooltip(
+                `<div>
+                     Hospital General Docente Enrique Cabrera (Nacional)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b2064e55b63e48059ef26e28f38abc35 = L.circleMarker(
+                [21.8913073212293, -82.8065486742056],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_df42bbdae78f4b6785d77117fede6f83 = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_f703052ebfac4ce68f01ce28490694dd = $(`             <div id="vega_lite_f703052ebfac4ce68f01ce28490694dd"></div>             `)[0];
+            popup_df42bbdae78f4b6785d77117fede6f83.setContent(vega_lite_f703052ebfac4ce68f01ce28490694dd);
+        
+
+        circle_marker_b2064e55b63e48059ef26e28f38abc35.bindPopup(popup_df42bbdae78f4b6785d77117fede6f83)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_f703052ebfac4ce68f01ce28490694dd, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital10", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital10", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector746": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_b2064e55b63e48059ef26e28f38abc35.bindTooltip(
+                `<div>
+                     Hospital General Docente Héroes de Baire
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_683185a58bd94846aa303d318eea9b7a = L.circleMarker(
+                [22.8932415787285, -82.505020716513],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_da50b30fe6d64e56875e0392333a0d55 = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_d86794e8e59242b6b7e18fbb89e26ccc = $(`             <div id="vega_lite_d86794e8e59242b6b7e18fbb89e26ccc"></div>             `)[0];
+            popup_da50b30fe6d64e56875e0392333a0d55.setContent(vega_lite_d86794e8e59242b6b7e18fbb89e26ccc);
+        
+
+        circle_marker_683185a58bd94846aa303d318eea9b7a.bindPopup(popup_da50b30fe6d64e56875e0392333a0d55)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_d86794e8e59242b6b7e18fbb89e26ccc, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital11", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital11", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector747": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_683185a58bd94846aa303d318eea9b7a.bindTooltip(
+                `<div>
+                     Hospital General Docente Iván Portuondo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d24dcef2d9804a26a523c9b66e67246a = L.circleMarker(
+                [21.535902149601, -77.2744601973742],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_9297b10537cc4b038a687cf166165b0c = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_0b02441b262148a3a162013ed2c97754 = $(`             <div id="vega_lite_0b02441b262148a3a162013ed2c97754"></div>             `)[0];
+            popup_9297b10537cc4b038a687cf166165b0c.setContent(vega_lite_0b02441b262148a3a162013ed2c97754);
+        
+
+        circle_marker_d24dcef2d9804a26a523c9b66e67246a.bindPopup(popup_9297b10537cc4b038a687cf166165b0c)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_0b02441b262148a3a162013ed2c97754, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital12", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital12", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector748": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_d24dcef2d9804a26a523c9b66e67246a.bindTooltip(
+                `<div>
+                     Hospital General Docente Universitario Martin Chang Puga
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0b581065bd0a4004a72575bcf54bd0f1 = L.circleMarker(
+                [23.1425190533174, -82.3922103741789],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_482b287b6d644fc5b4943cc76ad6e5fb = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_943e262f6de04606b7d4a2bb7bb27c4e = $(`             <div id="vega_lite_943e262f6de04606b7d4a2bb7bb27c4e"></div>             `)[0];
+            popup_482b287b6d644fc5b4943cc76ad6e5fb.setContent(vega_lite_943e262f6de04606b7d4a2bb7bb27c4e);
+        
+
+        circle_marker_0b581065bd0a4004a72575bcf54bd0f1.bindPopup(popup_482b287b6d644fc5b4943cc76ad6e5fb)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_943e262f6de04606b7d4a2bb7bb27c4e, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital13", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital13", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector749": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_0b581065bd0a4004a72575bcf54bd0f1.bindTooltip(
+                `<div>
+                     Hospital Ginecobstétrico América Arias (Maternidad de Línea)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a8f76ef556e549118ef04680b2479d72 = L.circleMarker(
+                [23.1302388784902, -82.4004381606861],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_ca398b588148413cbfd9afeb8b6e0036 = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_a8f4133a905d4ef092321dc34115ec5a = $(`             <div id="vega_lite_a8f4133a905d4ef092321dc34115ec5a"></div>             `)[0];
+            popup_ca398b588148413cbfd9afeb8b6e0036.setContent(vega_lite_a8f4133a905d4ef092321dc34115ec5a);
+        
+
+        circle_marker_a8f76ef556e549118ef04680b2479d72.bindPopup(popup_ca398b588148413cbfd9afeb8b6e0036)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_a8f4133a905d4ef092321dc34115ec5a, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital14", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital14", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector750": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_a8f76ef556e549118ef04680b2479d72.bindTooltip(
+                `<div>
+                     Hospital Ginecobstétrico Clodomira Acosta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_43384d534d694a9393395ecf3a06d724 = L.circleMarker(
+                [23.1048710549905, -82.3578486741797],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_e40d88b561904c21a5c0bf2569d8daff = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_98f58a71dd36416d950f09948e2b0897 = $(`             <div id="vega_lite_98f58a71dd36416d950f09948e2b0897"></div>             `)[0];
+            popup_e40d88b561904c21a5c0bf2569d8daff.setContent(vega_lite_98f58a71dd36416d950f09948e2b0897);
+        
+
+        circle_marker_43384d534d694a9393395ecf3a06d724.bindPopup(popup_e40d88b561904c21a5c0bf2569d8daff)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_98f58a71dd36416d950f09948e2b0897, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital15", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital15", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector751": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_43384d534d694a9393395ecf3a06d724.bindTooltip(
+                `<div>
+                     Hospital Materno Hijas de Galicia (Hospital Materno Infantil Diez de Octubre)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4311912a252a44658ae8fe5e14cfd153 = L.circleMarker(
+                [23.0554442103665, -82.3664519453451],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_fa06eff5cfed493fb1dadc333b8962ce = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_8feb2ea5a414480294126f73d084d2b0 = $(`             <div id="vega_lite_8feb2ea5a414480294126f73d084d2b0"></div>             `)[0];
+            popup_fa06eff5cfed493fb1dadc333b8962ce.setContent(vega_lite_8feb2ea5a414480294126f73d084d2b0);
+        
+
+        circle_marker_4311912a252a44658ae8fe5e14cfd153.bindPopup(popup_fa06eff5cfed493fb1dadc333b8962ce)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_8feb2ea5a414480294126f73d084d2b0, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital16", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital16", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector752": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_4311912a252a44658ae8fe5e14cfd153.bindTooltip(
+                `<div>
+                     Hospital Materno Infantil Dr. Ángel Arturo Aballí
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_30e5108210c444edaf080ec08621cf9e = L.circleMarker(
+                [22.8598997867259, -82.032284359727],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_7bfc9325045c4ba3b7372bd8eedc23d6 = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_3f60b325497e4d3fbb84e026a56d6de4 = $(`             <div id="vega_lite_3f60b325497e4d3fbb84e026a56d6de4"></div>             `)[0];
+            popup_7bfc9325045c4ba3b7372bd8eedc23d6.setContent(vega_lite_3f60b325497e4d3fbb84e026a56d6de4);
+        
+
+        circle_marker_30e5108210c444edaf080ec08621cf9e.bindPopup(popup_7bfc9325045c4ba3b7372bd8eedc23d6)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_3f60b325497e4d3fbb84e026a56d6de4, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital17", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital17", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector753": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_30e5108210c444edaf080ec08621cf9e.bindTooltip(
+                `<div>
+                     Hospital Materno Infantil Manuel Piti Fajardo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_61dd5fbe731b4b6ab2bd1271121e4e38 = L.circleMarker(
+                [23.0697933142491, -82.4210917741805],
+                {"bubblingMouseEvents": true, "color": "#9b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b00ff", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 38.333333333333336, "stroke": true, "weight": 3}
+            ).addTo(feature_group_658fdaff4ad44cbfb908e29ee4c73352);
+        
+    
+        var popup_f3ab09bec91f48f892e677fbd1b94cc1 = L.popup({"maxHeigth": 400, "maxWidth": 450});
+
+        
+            var vega_lite_bb63b5f7e58949709869c90634b45031 = $(`             <div id="vega_lite_bb63b5f7e58949709869c90634b45031"></div>             `)[0];
+            popup_f3ab09bec91f48f892e677fbd1b94cc1.setContent(vega_lite_bb63b5f7e58949709869c90634b45031);
+        
+
+        circle_marker_61dd5fbe731b4b6ab2bd1271121e4e38.bindPopup(popup_f3ab09bec91f48f892e677fbd1b94cc1)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_bb63b5f7e58949709869c90634b45031, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-064e1489a6a8326d1e1957820e6024ce"}, "datasets": {"data-064e1489a6a8326d1e1957820e6024ce": [{"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 3.0, "Hospital14": 3.0, "Hospital15": 6, "Hospital16": 1.0, "Hospital17": 2.0, "Hospital18": 14, "Hospital2": 2.0, "Hospital3": 19.0, "Hospital4": 3.0, "Hospital5": 3.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te llamaron por sobrenombres o diminutivos (mamita, ni\u00f1a, gorda, negra, etc)", "Tipos": "Maltrato1"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": 1.0, "Hospital15": 3, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 4, "Hospital2": 1.0, "Hospital3": 8.0, "Hospital4": 2.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 4.0, "Maltratos": "Se burlaron de ti", "Tipos": "Maltrato2"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 4.0, "Hospital14": 1.0, "Hospital15": 6, "Hospital16": null, "Hospital17": 1.0, "Hospital18": 17, "Hospital2": 1.0, "Hospital3": 22.0, "Hospital4": 3.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 2.0, "Hospital8": 1, "Hospital9": 9.0, "Maltratos": "Te dijeron que no expl\u00edcitamente a algo que pediste", "Tipos": "Maltrato3"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": 1.0, "Hospital15": 9, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 27, "Hospital2": 1.0, "Hospital3": 27.0, "Hospital4": 4.0, "Hospital5": 6.0, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 10.0, "Maltratos": "Te hablaron en voz alta de modo grosero", "Tipos": "Maltrato4"}, {"Hospital0": null, "Hospital1": 1.0, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 4.0, "Hospital14": null, "Hospital15": 7, "Hospital16": 1.0, "Hospital17": 1.0, "Hospital18": 16, "Hospital2": 1.0, "Hospital3": 18.0, "Hospital4": 4.0, "Hospital5": 5.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 3, "Hospital9": 9.0, "Maltratos": "Ignoraron algo que les pediste", "Tipos": "Maltrato5"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 1.0, "Hospital11": 2.0, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 1, "Hospital2": 1.0, "Hospital3": null, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": null, "Maltratos": "Te dieron golpes, sacudidas, empujones", "Tipos": "Maltrato6"}, {"Hospital0": null, "Hospital1": null, "Hospital10": 2.0, "Hospital11": 2.0, "Hospital12": 2, "Hospital13": 2.0, "Hospital14": null, "Hospital15": 3, "Hospital16": 2.0, "Hospital17": 1.0, "Hospital18": 12, "Hospital2": 1.0, "Hospital3": 16.0, "Hospital4": 3.0, "Hospital5": 1.0, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 3.0, "Maltratos": "Te dijeron que estabas poniendo en riesgo a tu hijo/a", "Tipos": "Maltrato7"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": null, "Hospital14": null, "Hospital15": 1, "Hospital16": 1.0, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 3.0, "Hospital4": null, "Hospital5": null, "Hospital6": null, "Hospital7": 1.0, "Hospital8": 2, "Hospital9": 2.0, "Maltratos": "Te culparon por situaciones ocurridas en el nacimiento", "Tipos": "Maltrato8"}, {"Hospital0": null, "Hospital1": null, "Hospital10": null, "Hospital11": null, "Hospital12": 1, "Hospital13": 1.0, "Hospital14": null, "Hospital15": 1, "Hospital16": null, "Hospital17": null, "Hospital18": 3, "Hospital2": null, "Hospital3": 1.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": null, "Hospital7": null, "Hospital8": 1, "Hospital9": 1.0, "Maltratos": "Te amenazaron", "Tipos": "Maltrato9"}, {"Hospital0": 1.0, "Hospital1": 1.0, "Hospital10": 1.0, "Hospital11": 1.0, "Hospital12": 2, "Hospital13": 5.0, "Hospital14": null, "Hospital15": 4, "Hospital16": null, "Hospital17": 2.0, "Hospital18": 18, "Hospital2": null, "Hospital3": 17.0, "Hospital4": 1.0, "Hospital5": null, "Hospital6": 1.0, "Hospital7": 1.0, "Hospital8": 1, "Hospital9": 2.0, "Maltratos": "Otro tipo de maltrato", "Tipos": "Maltrato10"}]}, "encoding": {"tooltip": {"field": "Maltratos", "type": "nominal"}, "x": {"field": "Hospital18", "scale": {"domain": [0, 30]}, "title": "Hospital", "type": "quantitative"}, "y": {"field": "Tipos", "sort": {"field": "Hospital18", "op": "count", "order": "ascending"}, "title": "Tipos", "type": "nominal"}}, "height": 300, "mark": {"color": "blue", "size": 20, "type": "bar"}, "selection": {"selector754": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Tipos de maltrato por Hospital", "width": 350})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            circle_marker_61dd5fbe731b4b6ab2bd1271121e4e38.bindTooltip(
+                `<div>
+                     Hospital Universitario Ginecobstétrico Eusebio Hernández Pérez (Maternidad obrera)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_e9104dc56e0040cd87ebce97b0f7aeb9 = {
+                base_layers : {
+                    "Dark" : tile_layer_9f17d74cdfae43999dccf03a538a6880,
+                    "Light" : tile_layer_5f7c32ebf3c246d2838a56633c55733e,
+                },
+                overlays :  {
+                    "Hospitales" : feature_group_658fdaff4ad44cbfb908e29ee4c73352,
+                },
+            };
+            L.control.layers(
+                layer_control_e9104dc56e0040cd87ebce97b0f7aeb9.base_layers,
+                layer_control_e9104dc56e0040cd87ebce97b0f7aeb9.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_435965817f9d4fc5a51bf5f8c63aa234);
+            tile_layer_5f7c32ebf3c246d2838a56633c55733e.remove();
+            tile_layer_9f17d74cdfae43999dccf03a538a6880.remove();
+        
+</script>
