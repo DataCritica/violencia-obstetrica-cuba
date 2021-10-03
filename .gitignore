@@ -1,6 +1,6 @@
 # folders
 /data
-/env_violencia_obstetrica
+/env*
 .ipynb*
 
 # files
