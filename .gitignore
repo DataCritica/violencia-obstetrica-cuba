@@ -1,6 +1,7 @@
 # folders
 /data
 /env*
+/process_data
 .ipynb*
 
 # files
