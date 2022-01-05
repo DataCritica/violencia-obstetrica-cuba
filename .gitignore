@@ -1,9 +1,19 @@
 # folders
-/data
-/env*
-/process_data
-.ipynb*
+data
+process_data
+dataviz
 
-# files
+# Env
+env*
+
+# Python
 *.py
-*.R
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
