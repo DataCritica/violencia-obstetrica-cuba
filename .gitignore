@@ -1,12 +1,11 @@
-# folders
+# Folders
 data
-process_data
 dataviz
 
 # Env
 env*
 
-# Python
+# Python files
 *.py
 
 # Jupyter Notebook
@@ -17,5 +16,5 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Visual Studio
+# VS Code
 .vs*
