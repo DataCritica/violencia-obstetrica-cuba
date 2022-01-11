@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+folium = "*"
+pandas = "*"
+plotly = "*"
+pyhere = "*"
+altair = "*"
+pyprojroot = "*"
+pathlib = "*"
+openpyxl = "*"
+matplotlib = "*"
+nbformat = "*"
+ipykernel = "*"
+
+[dev-packages]
+ipykernel = "*"
+
+[requires]
+python_version = "3.8"
