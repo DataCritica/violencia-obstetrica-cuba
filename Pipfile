@@ -15,6 +15,7 @@ openpyxl = "*"
 matplotlib = "*"
 nbformat = "*"
 ipykernel = "*"
+violencia-obstetrica = {editable = true, path = "."}
 
 [dev-packages]
 ipykernel = "*"
