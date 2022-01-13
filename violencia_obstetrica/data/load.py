@@ -21,7 +21,7 @@ def load_columns(df):
 data_cuba_pre = path.data_processed_dir("data_cuba_preprocessed.xlsx")
 data_cuba = path.data_processed_dir("data_cuba_processed.xlsx")
 data_directorio =  path.data_processed_dir("directorio_hospitales.xlsx")
-data_testimonios =  path.data_processed_dir("testimonios_cuba.xlsx")
+data_testimonios =  path.data_processed_dir("testimonios_cuba_processed.xlsx")
 icon_image = path.assets_dir("icon.png")
 
 # Outputs
