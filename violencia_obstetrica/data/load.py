@@ -10,8 +10,9 @@ def load_file(file="filename", sheet="sheet_name"):
     return df
 
 """
-Function to convert 
-columns into a list
+Function to convert columns into a list
+
+df: dataframe
 """
 def load_columns(df):
     cols = df.columns
