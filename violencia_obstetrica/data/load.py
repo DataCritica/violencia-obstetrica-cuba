@@ -2,10 +2,13 @@ import pandas as pd
 import violencia_obstetrica.utils.paths as path
 
 """ 
-Function to read excel 
-files as dataframes
+Function to read excel files as dataframes
+
+file: file's name
+sheet: sheet's name
+return: dataframe
 """
-def load_file(file="filename", sheet="sheet_name"):
+def load_file(file=None, sheet=None):
     df = pd.read_excel(file, index_col=None, sheet_name=sheet)
     return df
 
@@ -13,6 +16,7 @@ def load_file(file="filename", sheet="sheet_name"):
 Function to convert columns into a list
 
 df: dataframe
+return: list of columns names
 """
 def load_columns(df):
     cols = df.columns

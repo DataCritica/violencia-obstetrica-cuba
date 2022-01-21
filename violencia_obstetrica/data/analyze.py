@@ -1,5 +1,3 @@
-from unicodedata import numeric
-import numpy as np
 import pandas as pd
 
 """
@@ -115,7 +113,7 @@ def drop_zeros(*args, col_name=None):
     return dfs
 
 """
-Function to drop NaN values
+Function to drop NaN values and reset index
 
 df: dataframe
 col_name: column's name to remove NaN values
