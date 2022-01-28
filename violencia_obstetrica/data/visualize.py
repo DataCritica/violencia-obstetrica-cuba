@@ -24,3 +24,25 @@ def secuelas_bebe(df):
         yaxis_title='Encuestadas',
         )
     return fig
+
+def parto_atencion(df):
+    tipo_parto = [
+    'Cesárea de urgencia', 
+    'Cesárea por fallar inducción del parto', 
+    'Cesárea programada', 
+    'Parto vaginal'
+    ]
+
+    fig = go.Figure(data=[
+        go.Bar(name='Alto riesgo', x=tipo_parto, y=df.iloc[0, 1:5]),
+        go.Bar(name='Bajo riesgo', x=tipo_parto, y=df.iloc[1, 1:5]),
+        go.Bar(name='Otro', x=tipo_parto, y=df.iloc[2, 1:5])  
+    ])
+    # Change the bar mode
+    fig.update_layout(
+        barmode='stack', 
+        title='Atención materna de acuerdo al tipo de parto', 
+        xaxis_title='Tipo de parto', 
+        yaxis_title='Encuestadas',
+        )
+    return fig
