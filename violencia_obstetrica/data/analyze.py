@@ -17,43 +17,28 @@ def create_pivot_tabe(df, values=None, index=None, cols=None, func='count'):
     return table
 
 """
-Function to create pivot tables for several columns
-
-df: dataframe
-values: set values
-index: set index
-cols: list with columns by index 
-func: function (count as default)
-return: list of pivot tables
-"""
-def create_complex_pivot_table(df, values=None, index=None, cols=list, func='count'):
-    tables = []
-    list_cols = df.columns
-    count = len(cols)
-    for i in range(count):
-        table = pd.pivot_table(df, values=list_cols[values], index=list_cols[index],
-                columns=list_cols[cols[i]], aggfunc=func)
-        tables.append(table)
-    return tables
-
-"""
 Function to create pivot tables for several columns and indexes
 
 df: dataframe
 values: set values
-index: list with indexes 
+index: int or list with indexes 
 cols: list with columns by index 
 func: function (count as default)
 return: list of pivot tables
 """
-def create_vcomplex_pivot_table(df, values=None, index=list, cols=list, func='count'):
+def create_complex_pivot_table(df, values=None, index=None, cols=None, func='count'):
     tables = []
+    if type(index) == int:
+        index_list = []
+        index_list.append(index)
+    else:
+        index_list = index
     list_cols = df.columns
     count_cols = len(cols)
-    count_index = len(index)
+    count_index = len(index_list)
     for i in range(count_cols):
         for j in range(count_index):
-            table = pd.pivot_table(df, values=list_cols[values], index=list_cols[index[j]],
+            table = pd.pivot_table(df, values=list_cols[values], index=list_cols[index_list[j]],
                     columns=list_cols[cols[i]], aggfunc=func)
             tables.append(table)
     return tables
