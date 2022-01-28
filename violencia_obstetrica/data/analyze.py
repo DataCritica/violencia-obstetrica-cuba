@@ -22,7 +22,7 @@ Function to create pivot tables for several columns
 df: dataframe
 values: set values
 index: set index
-cols: list with columns index 
+cols: list with columns by index 
 func: function (count as default)
 return: list of pivot tables
 """
@@ -34,6 +34,28 @@ def create_complex_pivot_table(df, values=None, index=None, cols=list, func='cou
         table = pd.pivot_table(df, values=list_cols[values], index=list_cols[index],
                 columns=list_cols[cols[i]], aggfunc=func)
         tables.append(table)
+    return tables
+
+"""
+Function to create pivot tables for several columns and indexes
+
+df: dataframe
+values: set values
+index: list with indexes 
+cols: list with columns by index 
+func: function (count as default)
+return: list of pivot tables
+"""
+def create_vcomplex_pivot_table(df, values=None, index=list, cols=list, func='count'):
+    tables = []
+    list_cols = df.columns
+    count_cols = len(cols)
+    count_index = len(index)
+    for i in range(count_cols):
+        for j in range(count_index):
+            table = pd.pivot_table(df, values=list_cols[values], index=list_cols[index[j]],
+                    columns=list_cols[cols[i]], aggfunc=func)
+            tables.append(table)
     return tables
 
 """
@@ -55,11 +77,41 @@ Function to delete a column
 
 args: dataframes
 col_name: name of the column to remove
+return: list of dataframes
 """
 def del_col(*args, col_name=None):
     dfs = list(args)
     for i in range(len(dfs)):
         dfs[i].drop(col_name, axis=1, inplace=True)
+    return dfs
+
+"""
+Function to delete a row
+
+args: dataframes
+row_name: index of the row to remove
+return: list of dataframes
+"""
+def del_row(*args, row_name=None):
+    dfs = list(args)
+    for i in range(len(dfs)):
+        dfs[i].drop(row_name, axis=0, inplace=True)
+        dfs[i].reset_index(drop=True)
+    return dfs
+
+"""
+Function to replace a value
+
+args: dataframes
+col_name: name of the column with the values
+old_val: old value
+new_val: new value
+return: list of dataframes
+"""
+def replace_value(*args, col_name=None, old_val=None, new_val=None):
+    dfs = list(args)
+    for i in range(len(dfs)):
+        dfs[i].replace({f'{col_name}': {old_val: new_val}}, inplace=True)
     return dfs
 
 """
@@ -154,3 +206,17 @@ def merge_dataframes(*args, col_name=None, how='outer'):
         else:
             df = pd.merge(df, dfs[i], on=col_name, how=how)
     return df
+
+"""
+Function to sort dataframes according to index
+
+df: dataframes
+index: list with indexes 
+return: list of dataframes
+"""
+def sort_by_index(df, index=list):
+    df_sorted = [list() for x in index]
+    for i in range(len(index)):
+        for j in range(i, len(df), len(index)):
+            df_sorted[i].append(df[j])
+    return df_sorted
