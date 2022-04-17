@@ -16,6 +16,7 @@ matplotlib = "*"
 nbformat = "*"
 ipykernel = "*"
 violencia-obstetrica = {editable = true, path = "."}
+pillow = "*"
 
 [dev-packages]
 ipykernel = "*"
